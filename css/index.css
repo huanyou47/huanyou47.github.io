@@ -1255,147 +1255,39 @@ footer.is-mobile {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
 }
-#content-inner h1,
-#content-inner h2,
-#content-inner h3,
-#content-inner h4,
-#content-inner h5,
-#content-inner h6 {
-  cursor: pointer;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  -ms-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-}
-#content-inner h1:before,
-#content-inner h2:before,
-#content-inner h3:before,
-#content-inner h4:before,
-#content-inner h5:before,
-#content-inner h6:before {
-  position: absolute;
-  top: calc(50% - 0.35rem);
-  left: 0;
-  color: #f47466;
-  content: "\f0c1";
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: 0.8rem;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  -ms-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-}
-#content-inner h1:hover,
-#content-inner h2:hover,
-#content-inner h3:hover,
-#content-inner h4:hover,
-#content-inner h5:hover,
-#content-inner h6:hover {
-  padding-left: 1.1rem;
-}
-#content-inner h1:hover:before,
-#content-inner h2:hover:before,
-#content-inner h3:hover:before,
-#content-inner h4:hover:before,
-#content-inner h5:hover:before,
-#content-inner h6:hover:before {
-  color: #49b1f5;
-}
-#content-inner h1 {
-  padding-left: 1.1rem;
-}
-#content-inner h1:before {
-  top: calc(50% - unit(fontsize / 2 - 0.05, "rem"));
-  font-size: 1rem;
-}
-#content-inner h1:hover {
-  padding-left: 1.2rem;
-}
-#content-inner h2 {
-  padding-left: 1rem;
-}
-#content-inner h2:before {
-  top: calc(50% - unit(fontsize / 2 - 0.05, "rem"));
-  font-size: 0.9rem;
-}
-#content-inner h2:hover {
-  padding-left: 1.1rem;
-}
-#content-inner h3 {
-  padding-left: 0.9rem;
-}
-#content-inner h3:before {
-  top: calc(50% - unit(fontsize / 2 - 0.05, "rem"));
-  font-size: 0.8rem;
-}
-#content-inner h3:hover {
-  padding-left: 1rem;
-}
-#content-inner h4 {
-  padding-left: 0.8rem;
-}
-#content-inner h4:before {
-  top: calc(50% - unit(fontsize / 2 - 0.05, "rem"));
-  font-size: 0.7rem;
-}
-#content-inner h4:hover {
-  padding-left: 0.9rem;
-}
-#content-inner h5 {
-  padding-left: 0.7rem;
-}
-#content-inner h5:before {
-  top: calc(50% - unit(fontsize / 2 - 0.05, "rem"));
-  font-size: 0.6rem;
-}
-#content-inner h5:hover {
-  padding-left: 0.8rem;
-}
-#content-inner h6 {
-  padding-left: 0.7rem;
-}
-#content-inner h6:before {
-  top: calc(50% - unit(fontsize / 2 - 0.05, "rem"));
-  font-size: 0.6rem;
-}
-#content-inner h6:hover {
-  padding-left: 0.8rem;
-}
-#content-inner ol,
-#content-inner ul {
+ol,
+ul {
   margin-top: 0.4rem;
   padding: 0 0 0 0.8rem;
   list-style: none;
   counter-reset: li;
 }
-#content-inner ol p,
-#content-inner ul p {
+ol p,
+ul p {
   margin: 0;
 }
-#content-inner ol ol,
-#content-inner ul ol,
-#content-inner ol ul,
-#content-inner ul ul {
+ol ol,
+ul ol,
+ol ul,
+ul ul {
   padding-left: 0.5rem;
 }
-#content-inner ol li,
-#content-inner ul li {
+ol li,
+ul li {
   position: relative;
   margin: 0.2rem 0;
   padding: 0.1rem 0.5rem 0.1rem 1.5rem;
 }
-#content-inner ol li:hover:before,
-#content-inner ul li:hover:before {
+ol li:hover:before,
+ul li:hover:before {
   -webkit-transform: rotate(360deg);
   -moz-transform: rotate(360deg);
   -o-transform: rotate(360deg);
   -ms-transform: rotate(360deg);
   transform: rotate(360deg);
 }
-#content-inner ol li:before,
-#content-inner ul li:before {
+ol li:before,
+ul li:before {
   position: absolute;
   top: 0;
   left: 0;
@@ -1408,21 +1300,10 @@ footer.is-mobile {
   -ms-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-#content-inner ol > li:before {
-  margin-top: 0.2rem;
-  width: 1.2rem;
-  height: 1.2rem;
-  border-radius: 0.6rem;
-  content: counter(li);
-  counter-increment: li;
-  text-align: center;
-  font-size: 0.6rem;
-  line-height: 1.2rem;
-}
-#content-inner ul > li:hover:before {
+ul > li:hover:before {
   border-color: #ff7242;
 }
-#content-inner ul > li:before {
+ul > li:before {
   top: 10px;
   margin-left: 0.45rem;
   width: 0.3rem;
